@@ -1,0 +1,20 @@
+# Rendered by scripts/run-scenario.sh: @EXPID@ and @REPO@ are replaced.
+DEFAULT:
+  EXPID: @EXPID@
+  HPCARCH: local
+EXPERIMENT:
+  DATELIST: '20000101'
+  MEMBERS: fc0
+  CHUNKSIZEUNIT: month
+  CHUNKSIZE: '4'
+  NUMCHUNKS: '3'
+  CHUNKINI: ''
+  CALENDAR: standard
+PROJECT:
+  PROJECT_TYPE: local       # not "none": Autosubmit drops extended headers/tailers in dummy projects
+  PROJECT_DESTINATION: 'ffs-poc'
+LOCAL:
+  PROJECT_PATH: '@REPO@/project'
+RERUN:
+  RERUN: false
+  RERUN_JOBLIST: ''

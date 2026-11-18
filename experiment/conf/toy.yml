@@ -1,0 +1,7 @@
+# The toy workflow (project/templates), independent of the integration.
+TOY:
+  PYTHON: @REPO@/envs/toy/bin/python   # interpreter of the venv with numpy, netCDF4, xarray (scripts/setup.sh)
+  DATA_DIR: @REPO@/data/%DEFAULT.EXPID%
+  FAULT:
+    KIND: none              # none | empty | truncate
+    CHUNK: 2
